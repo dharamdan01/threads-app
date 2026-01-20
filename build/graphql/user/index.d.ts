@@ -3,9 +3,14 @@ export declare const User: {
     Queries: string;
     mutation: string;
     resolvers: {
-        queries: {};
+        Queries: {
+            getUserToken: (_: any, payload: {
+                email: string;
+                password: string;
+            }) => Promise<string>;
+        };
         mutations: {
-            createUser: (_: any, {}: {}) => Promise<string>;
+            createUser: (_: any, payload: import("../../services/user.js").CreateUserPayload) => Promise<string>;
         };
     };
 };

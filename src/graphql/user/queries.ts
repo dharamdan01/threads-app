@@ -1,1 +1,3 @@
-export const Queries = `#graphql`;
+export const Queries = `#graphql
+    getUserToken(email: String!, password: String!): String
+`;
