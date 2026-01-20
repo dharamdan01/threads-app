@@ -1,2 +1,2 @@
-export declare const typeDefs = "#graphql";
+export declare const typeDefs = "#graphql\n    type User {\n        id: ID!\n        firstName: String!\n        lastName: String\n        email: String!\n        profileImageURL: String\n    }\n";
 //# sourceMappingURL=typedef_temp.d.ts.map
